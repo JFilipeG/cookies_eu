@@ -1,7 +1,7 @@
 <% if cookies['cookie_eu_consented'] != 'true' %>
   <div class="cookies-eu">
     <% if defined?(in_message_link).present? && defined?(in_message_link_text).present? %>
-      <span class="cookies-eu-content-holder"><%= t('cookies_eu.cookies_text_with_link', href: link_to(in_message_link_text, in_message_link, target: '_blank' %></span>
+      <span class="cookies-eu-content-holder"><%= t('cookies_eu.cookies_text_with_link', href: link_to(in_message_link_text, in_message_link, target: '_blank') %></span>
     <% else %>
       <span class="cookies-eu-content-holder"><%= t('cookies_eu.cookies_text') %></span>
     <% end %>
